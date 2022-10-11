@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    background-color: #F2F2F2;
+}
+
+.content-main {
+    width: 100vw;
+    height: calc(100vh - 200px);
+    display: grid;
+    grid-template-rows: 0.1fr 0.6fr 0.1fr 0.1fr 0.1fr;
+    grid-template-columns: 10px 0.9fr 0.1fr 10px;
+    grid-template-areas: 
+        ". . . ."
+        ". content-main-left content-main-right ."
+        ". . . ."
+        ". . btn-section ."
+        ". . . ."
+        ;
+    justify-content: center;
+}
+
+.content-main-left {
+    grid-area: content-main-left;
+    display: flex;
+    align-items: center;
+}
+
+.content-main-right {
+    grid-area: content-main-right;
+    display: flex;
+    align-items: center;
+}
+
+.content-bottom-section {
+    grid-area: btn-section;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}

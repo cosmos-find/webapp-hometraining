@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+}
+
+.content-main {
+    height: calc(100vh - 200px - 200px);
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 0.9fr 0.1fr;
+    grid-template-areas: 
+        ". ."
+        "content-main-left content-main-right"
+        ". .";
+}
+
+.content-main-left {
+    grid-area: content-main-left;
+    /* background-color: bisque; */
+}
+
+.content-main-right {
+    grid-area: content-main-right;
+    /* background-color: cadetblue; */
+}
+
+.content-bottom {
+    height: 200px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 0.7fr 0.3fr;
+    grid-template-areas: 
+        ". ."
+        ". bottom-btn"
+        ". .";
+}
+
+.content-bottom-section {
+    grid-area: bottom-btn;
+}
